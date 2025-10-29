@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define a POST endpoint for GPS data
 @app.route('/gps', methods=['POST'])
 def receive_gps():
-    data = request.get_json(force=True)x
+    data = request.get_json(force=True)
 
     lat = data.get('lat')
     lon = data.get('lon')
